@@ -1,0 +1,13 @@
+{
+    "require": {
+        "phpseclib/phpseclib": "^3.0",
+        "robrichards/xmlseclibs": "^3.1",
+<<<<<<< HEAD
+        "guzzlehttp/guzzle": "^7.0",
+        "robrichards/wse-php": "^2.0",
+        "phpro/soap-client": "^1.0"
+=======
+        "robrichards/wse-php": "^2.0"
+>>>>>>> fa6d79efad4d22b23a38334756a42a2a4f07b41f
+    }
+}

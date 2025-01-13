@@ -1,0 +1,341 @@
+<?php
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+ini_set('default_socket_timeout', 120);
+
+$params = [
+    'tokenEmpresa'   => 'd0598286124ddf6d1bc40543ecb938ada1d8dce9',
+    'tokenPassword'  => '3d30b8257bc0cca11457d22e8be77549c30445a4',
+    'factura'        => [
+        'cantidadDecimales'      => 2,
+        'cliente'                => [
+            'actividadEconomicaCIIU' => '2221',
+            'destinatario'           => [
+                [
+                    'canalDeEntrega'       => '0',
+                    'email'                => [
+                        'string' => 'facturacionelectronica@gmtcarga.com.co',
+                    ],
+                    'nitProveedorReceptor' => '901046830',
+                    'telefono'             => '6053901671',
+                ],
+                [
+                    'canalDeEntrega'       => '0',
+                    'email'                => [
+                        'string' => 'facturacionelectronica@gmtcarga.com',
+                    ],
+                    'nitProveedorReceptor' => '901046830',
+                    'telefono'             => '6053901671',
+                ],
+                [
+                    'canalDeEntrega'       => '0',
+                    'email'                => [
+                        'string' => 'fe-oppfilm@obengroup.com',
+                    ],
+                    'nitProveedorReceptor' => '901046830',
+                    'telefono'             => '6053901671',
+                ],
+                [
+                    'canalDeEntrega'       => '0',
+                    'email'                => [
+                        'string' => 'luisjimenez@obengroup.com',
+                    ],
+                    'nitProveedorReceptor' => '901046830',
+                    'telefono'             => '6053901671',
+                ],
+                [
+                    'canalDeEntrega'       => '0',
+                    'email'                => [
+                        'string' => 'gabrielruiz@obengroup.com',
+                    ],
+                    'nitProveedorReceptor' => '901046830',
+                    'telefono'             => '6053901671',
+                ],
+            ],
+            'detallesTributarios' => [
+                [
+                    'codigoImpuesto' => '01',
+                    'extras'         => [
+                        [
+                            'controlInterno1' => '',
+                            'controlInterno2' => '',
+                            'nombre'          => '',
+                            'valor'           => '',
+                        ],
+                    ],
+                ],
+            ],
+            'direccionFiscal' => [
+                'aCuidadoDe'           => '',
+                'aLaAtencionDe'        => '',
+                'bloque'               => '',
+                'buzon'                => '',
+                'calle'                => '',
+                'calleAdicional'       => '',
+                'ciudad'               => 'GALAPA',
+                'codigoDepartamento'   => '08',
+                'correccionHusoHorario' => '',
+                'departamento'         => 'ATLANTICO',
+                'departamentoOrg'      => '',
+                'direccion'            => 'ZF ZOFIA KM 114 V COR MZ 20 LT 318',
+                'distrito'             => 'ZF ZOFIA KM 114 V COR MZ 20 LT 318',
+                'habitacion'           => '',
+                'lenguaje'             => 'es',
+                'municipio'            => '08296',
+                'nombreEdificio'       => '',
+                'numeroParcela'        => '',
+                'pais'                 => 'CO',
+                'piso'                 => '',
+                'region'               => '',
+                'subDivision'          => '',
+                'ubicacion'            => '',
+                'zonaPostal'           => '082001',
+            ],
+            'email'                  => 'facturacionelectronica@gmtcarga.com.co',
+            'informacionLegalCliente' => [
+                'codigoEstablecimiento' => '',
+                'nombreRegistroRUT'     => 'OBEN COLOMBIA S.A.S',
+                'numeroIdentificacion'  => '901046830',
+                'numeroIdentificacionDV' => '3',
+                'tipoIdentificacion'    => '31',
+            ],
+            'nombreRazonSocial'     => 'OBEN COLOMBIA S.A.S',
+            'notificar'             => 'SI',
+            'numeroDocumento'       => '901046830',
+            'numeroIdentificacionDV' => '3',
+            'responsabilidadesRut'  => [
+                [
+                    'obligaciones' => 'R-99-PN',
+                    'regimen'      => '05',
+                ],
+            ],
+            'tipoIdentificacion' => '31',
+            'tipoPersona'        => '1',
+        ],
+        'consecutivoDocumento'          => 'GMT4876',
+        'documentosReferenciados'       => [],
+        'detalleDeFactura'             => [
+            [
+                'cantidadPorEmpaque'        => '',
+                'cantidadReal'              => '1',
+                'cantidadRealUnidadMedida'  => 'WSD',
+                'cantidadUnidades'          => '1',
+                'codigoProducto'            => 'N/A',
+                'descripcion'               => 'Servicio de Transporte. Remesa No 150059. Cantidad transportada: 1.00',
+                'descripcionTecnica'        => '',
+                'documentosReferenciados'   => [],
+                'estandarCodigo'            => '999',
+                'estandarCodigoProducto'    => '36129',
+                'idEsquema'                 => '1',
+                'impuestosDetalles'         => [
+                    [
+                        'baseImponibleTOTALImp' => '0',
+                        'codigoTOTALImp'        => '01',
+                        'controlInterno'        => '0',
+                        'porcentajeTOTALImp'    => '0',
+                        'unidadMedida'          => '',
+                        'unidadMedidaTributo'   => '',
+                        'valorTOTALImp'         => '0',
+                        'valorTributoUnidad'    => '',
+                    ],
+                ],
+                'impuestosTotales' => [
+                    [
+                        'codigoTOTALImp' => '01',
+                        'montoTotal'     => '0',
+                    ],
+                ],
+                'marca'               => '',
+                'muestraGratis'       => '0',
+                'precioTotal'         => '3700000.00',
+                'precioTotalSinImpuestos' => '3700000.00',
+                'precioVentaUnitario' => '3700000.00',
+                'secuencia'           => '1',
+                'unidadMedida'        => 'WSD',
+                'informacionAdicional' => [
+                    [
+                        'nombre'                  => '01',
+                        'valor'                   => '131031167',
+                        'cantidad'                => '',
+                        'unidadMedidaTransporte'  => '',
+                    ],
+                    [
+                        'nombre'                  => '02',
+                        'valor'                   => '150059',
+                        'cantidad'                => '',
+                        'unidadMedidaTransporte'  => '',
+                    ],
+                    [
+                        'nombre'                  => '03',
+                        'valor'                   => '3700000',
+                        'cantidad'                => '1',
+                        'unidadMedidaTransporte'  => 'KGM',
+                    ],
+                ],
+                'descuento'              => '0',
+                'detalleAdicionalNombre' => '',
+                'detalleAdicionalValor'  => '',
+                'seriales'             => '',
+            ],
+        ],
+        'fechaEmision'                => '2024-10-10 09:49:59',
+        'fechaFinPeriodoFacturacion'  => '',
+        'fechaInicioPeriodoFacturacion' => '',
+        'impuestosGenerales' => [
+            [
+                'baseImponibleTOTALImp' => '3700000',
+                'codigoTOTALImp'        => '06',
+                'controlInterno'        => '6',
+                'porcentajeTOTALImp'    => '1.00',
+                'unidadMedida'          => '',
+                'unidadMedidaTributo'   => '',
+                'valorTOTALImp'         => '37000.00',
+                'valorTributoUnidad'    => '0',
+            ],
+        ],
+        'impuestosTotales' => [
+            [
+                'codigoTOTALImp' => '06',
+                'montoTotal'     => '37000.00',
+            ],
+        ],
+        'mediosDePago' => [
+            [
+                'medioPago'          => '31',
+                'metodoDePago'       => '2',
+                'numeroDeReferencia' => '01',
+                'fechaDeVencimiento' => '2024-11-09',
+            ],
+        ],
+        'ordenDeCompra' => [
+            [
+                'numeroOrden' => 'FV6656',
+                'fecha'       => '2024-09-26 04:23:05',
+            ],
+        ],
+        'moneda'                  => 'COP',
+        'redondeoAplicado'        => '0.00',
+        'rangoNumeracion'         => 'GMT-1',
+        'tipoDocumento'           => '01',
+        'tipoOperacion'           => '12',
+        'totalBaseImponible'      => '0',
+        'totalBrutoConImpuesto'   => '3700000',
+        'totalMonto'              => '3700000',
+        'totalProductos'          => '1',
+        'totalDescuentos'         => '',
+        'totalSinImpuestos'       => '3700000.00',
+        'informacionAdicional'    => [
+            'string' => '',
+        ],
+        'fechaVencimiento' => '2024-11-09',
+    ],
+    'adjuntos'      => 11,
+];
+
+$data_fac = [
+    [
+        'factura_id'                    => 9630,
+        'niif'                          => 0,
+        'cliente_id'                    => 91,
+        'encabezado_registro_id'        => 71142,
+        'consecutivo_factura'           => 4876,
+        'fecha'                         => '2024-10-10',
+        'vencimiento'                   => '2024-11-09',
+        'radicacion'                    => '',
+        'concepto'                      => 'Remesa No 150059 / GALAPA / GIRON / LAS DEMAS MANUFACTUR - ',
+        'concepto_item'                 => '21755-RM,',
+        'observacion'                   => '',
+        'fuente_facturacion_cod'        => 'RM',
+        'tipo_bien_servicio_factura_id' => 27,
+        'tipo_documento_id'             => 2,
+        'parametros_factura_id'         => 1,
+        'forma_compra_venta_id'         => 2,
+        'valor'                         => '3700000.00',
+        'tipo_factura_id'               => 3,
+        'estado'                        => 'C',
+        'usuario_id'                    => 50,
+        'oficina_id'                    => 1,
+        'sede_id'                       => '',
+        'ingreso_factura'               => '2024-10-10 06:06:24',
+        'con_usuario_id'                => 50,
+        'con_fecha_factura'             => '2024-10-10 18:10:00',
+        'causal_anulacion_id'           => '',
+        'anul_factura'                  => '',
+        'desc_anul_factura'             => '',
+        'anul_usuario_id'               => '',
+        'fecha_envio'                   => '2025-01-10 11:44:00',
+        'ultimo_mensaje'                => '--',
+        'reportada'                     => 0,
+        'cufe'                          => 'dbbe9ebece09f6bfd02996454330f3a910fbf39486e866c783a97be8818d09aa9f3b8b446df1f23142b57903a9748b70',
+        'xml'                           => 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGlu... (contenido del XML) ...',
+        'acuse'                         => 0,
+        'acuseRespuesta'                => 0,
+        'acuseComentario'               => '',
+        'fecha_acuse'                   => '2024-10-10 18:15:43',
+        'validacion_dian'               => 'exitosa',
+        'fecha_validacion_dian'         => '',
+        'xml_dian'                      => 'GMT4876.xml',
+        'pdf_dian'                      => '4876_9630.pdf',
+        'adjunto'                       => '',
+        'usuario_actualiza_id'          => '',
+        'fecha_actualiza'               => '',
+        'codigo_barras'                 => '',
+        'valida_creacion'               => 'F',
+        'prefijo'                       => 'GMT',
+        'consecutivo_prefactura'        => '',
+        'prefactura'                    => 0,
+        'departamento_id'               => '',
+        'reportada_rndc'                => 0,
+        'orden_compra'                  => '',
+        'aprobacion_rndc'               => '',
+        'fecha_aprobacion_rndc'         => '',
+        'rango_inicial'                 => 1,
+        'nroDoc'                        => '901046830',
+        'nroDocDV'                      => '3',
+        'razonsocial'                   => 'OBEN COLOMBIA S.A.S',
+        'apellido'                      => 'OBEN COLOMBIA S.A.S',
+        'nombre'                        => '',
+        'cliente_segundo'               => '',
+        'correo'                        => 'facturacionelectronica@gmtcarga.com.co',
+        'correo2'                       => 'fe-oppfilm@obengroup.com;luisjimenez@obengroup.com;gabrielruiz@obengroup.com',
+        'direccion'                     => 'ZF ZOFIA KM 114 V COR MZ 20 LT 318',
+        'cliente_email'                 => 'facturacionelectronica@gmtcarga.com.co',
+        'ciudad'                        => 'GALAPA',
+        'cod_ciudad'                    => '08296',
+        'departamento'                  => 'ATLANTICO',
+        'cod_depto'                     => '08',
+        'telefono'                      => '6053901671',
+        'tipo_persona'                  => '1',
+        'regimen'                       => '2',
+        'regimen_new'                   => '05',
+        'tipoDoc'                       => '31',
+        'zona_postal'                   => '082001',
+        'codigo_ciiu'                   => '2221',
+        'totalSinImpuestos'            => '3700000.00',
+        'totalPropio'                   => '',
+        'totalNoPropio'                 => '3700000.00',
+        'exiseOrden'                    => '',
+        'totalSinImpuestosTercero'      => '3700000.00',
+        'cuentas_sin_imp'               => 7,
+        'correo_sede'                   => '',
+        'importeTotal'                  => '3663000.00',
+        'cantidad_productos'            => '1.00',
+        'prefijo1'                      => 'GMT',
+        'tipoDocumento'                 => '01',
+    ]
+];
+
+
+/* require_once 'xml/NominaElectronica/NominaElectronicaAttachedDocument.php';
+
+$containerBuilder = new NominaElectronicaAttachedDocument();
+
+$containerBuilder->generateXML($params, $data_fac); */
+
+require_once 'xml/DocumentoSoporte/InvoiceAttachedDocument.php';
+
+$containerBuilder = new InvoiceAttachedDocument();
+
+$containerBuilder->generateXML($params, $data_fac);

@@ -1,0 +1,54 @@
+wse-php
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+11 May 2020, 2.0.4
+Improvements:
+- Add support for variable WSA NS in RelatesTo field. PR #55
+- Add missing EncodingType attribute in addUserToken. PR #36
+- Make it possible to only sign specific header nodes. PR #47
+
+Bug Fixes:
+- Fix undefined index notice. Refs #48
+
+03 Jan 2019, 2.0.3
+Improvements:
+- Change private properties to protected, so it can be extended. Refs #41
+- Add private key passphrase option to decryptSoapDoc. Refs #40
+- Adding option to use 2005 NS in WSA headers. Refs #46
+
+Features:
+- Adds support for WSA RelatesTo. Refs #45
+
+31 Aug 2017, 2.0.2
+Features:
+- Add WSA From. Refs #29
+
+Improvements:
+- Allow xmlseclibs 2.x and 3.x
+- Remove composer lock file as too many varying deps being tested against
+
+09 Mar 2017, 2.0.1
+Improvements:
+- Change depreciated split to explode.
+
+21 Oct 2016, 2.0.0
+Features:
+- Upgrade to use namespaces. Requires PHP 5.3+.
+
+Bug Fixes:
+- Add ValueType attribute when attaching token
+
+24 Jun 2015, 1.1.0
+Features:
+- Add options parameter to signSoapDoc() method.
+  options include insertBefore and KeyInfo array (X509SubjectKeyIdentifier).
+- Add options parameter to addEncryptedKey() method.
+  options include KeyInfo array (X509SubjectKeyIdentifier).
+- Add encryptSoapDoc() method
+- Add decryptSoapDoc() method
+- Libraries now provide ability to interoperate with WCF servers using message 
+  level security (Signatures and Encryption).
+- Add signBody property (boolean) to allow for disabling of signing soap body.
+
+08 Mar 2010, 1.0.0
+Initial import of libraries to repository from cdatazone web site
+Provides support for Digital Sigatures via WS-Security and WS-Addressing
